@@ -32,11 +32,6 @@ def acme_client():
 
 
 @pytest.fixture
-def acme_client():
-    return AcmeHashMapFake()
-
-
-@pytest.fixture
 def acme_backend(acme_client):
     return AcmeBackend(acme_client)
 
